@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Portal Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .filters {
+      margin: 20px;
+      text-align: center;
+    }
+    .filters input, .filters button {
+      padding: 10px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Job Portal Admin Dashboard</h1>
+</header>
+
+<div class="filters">
+  <input type="date" id="start-date">
+  <input type="date" id="end-date">
+  <button>Filter</button>
+  <button>Download Report</button>
+</div>
+
+<div class="dashboard">
+  <div class="card">
+    <h3>Total Jobs Posted</h3>
+    <p>1,234</p>
+  </div>
+  <div class="card">
+    <h3>Active Employers</h3>
+    <p>345</p>
+  </div>
+  <div class="card">
+    <h3>Job Applications</h3>
+    <p>2,890</p>
+  </div>
+  <div class="card">
+    <h3>Registered Job Seekers</h3>
+    <p>5,678</p>
+  </div>
+  <div class="card">
+    <h3>Recent Job Posts</h3>
+    <p>Senior Developer, Data Analyst, UX Designer...</p>
+  </div>
+  <div class="card">
+    <h3>Top Candidates</h3>
+    <p>John Doe, Jane Smith...</p>
+  </div>
+  <div class="card">
+    <h3>System Alerts</h3>
+    <p>No critical alerts</p>
+  </div>
+</div>
+
+</body>
+</html>
